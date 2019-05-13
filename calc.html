@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        function insert(num) {
+            document.form.textview.value = document.form.textview.value + num
+        }
+
+        function result() {
+            var exp = document.form.textview.value
+            if (exp) {
+                document.form.textview.value = eval(exp)
+            }
+        }
+
+        function clean() {
+            document.form.textview.value = ""
+        }
+
+        function removeLast() {
+            document.form.textview.value = document.form.textview.value.substring(0, document.form.textview.value.length - 1)
+        }
+
+        function factorial() {
+            function fact(f) {
+                return (f != 1) ? f * fact(f - 1) : 1;
+            }
+
+            document.form.textview.value = fact(+document.form.textview.value)
+        }
+
+        function fib() {
+            function fib(n) {
+                return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+            }
+
+            document.form.textview.value = fib(+document.form.textview.value)
+        }
+
+        function Check() {
+            var n = +document.form.textview.value;
+            for (var i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    document.form.textview.value = "Непростое"
+                    break
+                } else {
+                    document.form.textview.value = "Простое"
+                    break
+                }
+
+            }
+        }
+    </script>
+    <style>
+        .textview {
+            width: 400px;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 30px 30px;
+            color: #000000;
+            background-color: #c9c9c9;
+            border-radius: 60px;
+            border: 0px solid #ffffff;
+            font-size: 100%;
+        }
+
+        TD {
+            width: 100px; /* Ширина второй колонки */
+            background: #ffffff; /* Цвет фона второй колонки */
+            text-align: center; /* Выравнивание по правому краю */
+        }
+
+        .button {
+            cursor: pointer;
+            font-size: 100%;
+            text-decoration: none;
+            padding: 30px 30px;
+            color: #000000;
+            background-color: #c9c9c9;
+            border-radius: 60px;
+            border: 0px solid #ffffff;
+        }
+
+        .button2 {
+            cursor: pointer;
+            font-size: 100%;
+            text-decoration: none;
+            padding: 30px 30px;
+            color: #000000;
+            background-color: #c9b87e;
+            border-radius: 60px;
+            border: 0px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+<form name="form">
+    <input class="textview" name="textview">
+</form>
+<table>
+    <tr>
+        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+        <td><input class="button2" type="button" value="C" onclick="clean()">
+        <td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+        <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+        <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+        <td><input class="button2" type="button" value="- " onclick="insert('-')"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+        <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+        <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+        <td><input class="button2" type="button" value="+" onclick="insert('+')"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+        <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+        <td><input class="button2" type="button" value="/" onclick="insert('/')"></td>
+        <td><input class="button2" type="button" value="=" onclick="result()"></td>
+    </tr>
+    <tr>
+        <td><input class="button2" type="button" value="<" onclick="removeLast()"></td>
+        <td><input class="button2" type="button" value="!" onclick="factorial()"></td>
+        <td><input class="button2" type="button" value="*" onclick="insert('*')"></td>
+        <td><input class="button2" type="button" value="F" onclick="fib()"></td>
+    </tr>
+    <tr>
+        <td><input class="button" type="button" value="Простое" onclick="Check()"></td>
+    </tr>
+</table>
+</body>
+</html>
