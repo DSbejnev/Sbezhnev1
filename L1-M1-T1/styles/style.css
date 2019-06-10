@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 30px 0 30px 0;
+    width: 100%;
+    background: #000000;
+}
+
+nav {
+    text-align: center;
+    overflow: hidden;
+    list-style: none;
+}
+
+nav li {
+    margin: 20px;
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.maincontent {
+    padding: 30px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 820px;
+}
+
+.maincontent article {
+    width: 420px;
+    height: 350px;
+    padding: 0px 0px 0px 30px;
+    float: left;
+    background: #C0C0C0
+}
+
+.maincontent article h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+.maincontent article p {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+.maincontent article p1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+.my_projects {
+    padding: 30px 0 0 0;
+    width: 855px;
+    margin: 0 auto;
+}
+
+.my_projects h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.calculate {
+    padding: 30px 0 0 0;
+    height: 285px;
+    background: #C0C0C0
+}
+
+.calc_logo {
+    width: 285px;
+    float: left;
+}
+
+.calculator_description {
+    float: left;
+}
+
+.calculator_description h1 {
+    text-align: left;
+}
+
+.calculator_description p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+.calculator_description a {
+    text-decoration: none;
+    color: black;
+}
+
+.calculator_description a:hover {
+    text-decoration: underline;
+}
+
+.contactWithMe {
+    padding: 30px 0 0 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
