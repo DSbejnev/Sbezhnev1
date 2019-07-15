@@ -1,38 +1,29 @@
-.cherry1 {
-	margin: 100px 0px 0px 100px;
+.cherry1, .cherry2 {
   background: #8B0000;
   width: 200px;
   height: 200px;
   position: absolute;
   border-radius: 45%
 }
-.cherry1:before {
-  content: "";
-  width: 70px;
-  height: 35px;
-  position: absolute;
-  margin: 0px 0px 0px 65px;
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
- background: white;
+
+.cherry1 {
+	margin: 100px 0px 0px 100px;
 }
 
 .cherry2 {
 	margin: 100px 0px 0px 320px;
-  background: #8B0000;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  border-radius: 45%
 }
-.cherry2:before {
+
+.cherry1:before, .cherry2:before{
   content: "";
   width: 70px;
   height: 35px;
   position: absolute;
-  margin: 0px 0px 0px 65px;
+  margin-left: 65px;
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
  background: white;
 }
+
 
 
 .twig {
