@@ -1,16 +1,16 @@
-body{
-padding: 0;
-margin: 0;
+body {
+    padding: 0;
+    margin: 0;
 }
+
 header {
     height: 100px;
     width: 100%;
-    background: #000000;
     line-height: 100px;
-	display: block;
-	position: fixed;
-	z-index: 100;
-	background: linear-gradient(to right, #7B9CEA, #FFCCCC);
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(to top, #7B9CEA, #FFCCCC);
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
 a {
     text-decoration: none;
     color: white;
-    font-size: 36px; 
+    font-size: 36px;
     padding: 0 15px;
 }
 
@@ -39,32 +39,55 @@ li {
 li span {
     font-weight: bold;
 }
-.home-banner{
-	height: 1160px;
-	background: linear-gradient(to right, #7B9CEA, #FFCCCC);
-	display: flex;
+
+.home-banner-area {
+    height: 1160px;
+    background: linear-gradient(to top, #7B9CEA, #FFCCCC);
+    display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-.banner-content{
-width: 1600px;
-height: 760px;
-border-radius: 20px;
-margin: 0 auto;
-background-color: white;
-box-shadow: 0px 0px 50px rgba(0,0,0,5);
+.banner-content {
+    width: 1600px;
+    height: 760px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 5);
 }
 
 
 .about-me {
-    padding: 0 10px 0 20px;
+    padding: 30px 0px 0px 0px;
     float: right;
     width: 585px;
 }
 
 .my-photo {
     margin: 30px 50px;
+}
+
+.welcome-area {
+    height: 1160px;
+    background: linear-gradient(to top, #7B9CEA, #FFCCCC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    float: left;
+    width: 725px;
+    margin: 50px 25px 50px 50px;
+    font-size: 24px;
+}
+
+aside {
+    float: right;
+    width: 725px;
+    margin: 50px 50px 50px 25px;
+    font-size: 24px;
 }
 
 .headline {
@@ -94,10 +117,35 @@ box-shadow: 0px 0px 50px rgba(0,0,0,5);
 }
 
 footer {
-    height: 100px;
-    line-height: 100px;
-    width: 100%;
+    height: 400px;
     background: #000000;
     color: #5f5d67;
-    text-align: center;
+
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+
+}
+
+.footer-information {
+    margin-top: 100px;
+    float: left;
+    width: 1000px;
+    font-size: 24px;
+}
+
+.footer-link {
+    float: right;
+    width: 600px;
+    font-size: 24px;
+}
+
+.logo {
+    float: left;
+    margin-top: 50px;
 }
