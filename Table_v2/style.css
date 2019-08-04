@@ -1,0 +1,34 @@
+body{
+	counter-reset: section;
+}
+
+table{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+	border: 6px solid black;
+	empty-cells: hide;
+	table-layout: fixed;
+	width: 600px;
+}
+
+th::before{
+	counter-increment: section;
+	content: "Номер " counter(section);
+}
+
+td, th{
+	border: 3px solid black;
+	padding: 10px 10px;
+}
+
+td{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+td:hover{
+	color:white;
+	background:red;
+}
