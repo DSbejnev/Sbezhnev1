@@ -1,0 +1,39 @@
+.cherry1, .cherry2 {
+  background: #8B0000;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 45%
+}
+
+.cherry1 {
+	margin: 100px 0px 0px 100px;
+}
+
+.cherry2 {
+	margin: 100px 0px 0px 320px;
+}
+
+.cherry1:before, .cherry2:before{
+  content: "";
+  width: 70px;
+  height: 35px;
+  position: absolute;
+  margin-left: 65px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+ background: white;
+}
+
+
+
+.twig {
+  width: 220px;
+  height: 200px;
+   margin: 0px 0px 0px 199px;
+  border-left: 2px solid black;
+  border-top: 10px solid black;
+  border-right: 2px solid black;
+  border-radius: 100px 100px 100px 100px;
+}
+
+
